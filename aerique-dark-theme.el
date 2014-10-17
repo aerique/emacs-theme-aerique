@@ -45,18 +45,20 @@
   The point of this theme is not highlighting all kinds of different syntax
   but partitioning the source code in easily scannable pieces.")
 
-(let ((ad-comment       "#cc5c5c")  ; red
-      (ad-highlight     "#ffff00")  ; harsh yellow
-      (ad-keyword       "#8ccc8c")  ; green
+(let ((ad-comment       "#cd5c5c")  ; indian red
+      (ad-highlight     "#ffff00")  ; yellow
+      (ad-keyword       "#8fbc8f")  ; dark sea green
       (ad-link          "#00cccc")  ; cyan
-      (ad-string        "#cc8c5c")  ; brown
+      ;(ad-string        "#cc8c5c")  ; brown
+      ;; ^^^ I still like my own brown better :-(
+      (ad-string        "#cc8162")  ; LightSalmon3
       (ad-darkest       "#000000")  ; black
       (ad-lightest      "#ffffff")  ; white
       (ad-gray-darkest  "#292929")  ; gray16
       (ad-gray-dark     "#525252")  ; gray32
       (ad-gray-light    "#a3a3a3")  ; gray64
       (ad-gray-lightest "#e0e0e0")  ; gray88
-      (ad-red           "#ff0000")) ; harsh red
+      (ad-red           "#ff0000")) ; red
   (custom-theme-set-faces 'aerique-dark
     ;; baseline, everything either inherits from these or uses the above colors
     `(default ((t :foreground ,ad-gray-lightest :background ,ad-darkest)))
