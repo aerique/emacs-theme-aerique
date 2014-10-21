@@ -5,7 +5,7 @@
 ;;;; Author   : Erik Winkels
 ;;;; Keywords : color theme aerique dark aerique-dark
 ;;;; URL      : <https://github.com/aerique/emacs-aerique-dark-theme.git>
-;;;; Version  : 0.1
+;;;; Version  : 0.2 (2014-10-21)
 ;;;;
 ;;;; Package-Requires: ((emacs "24"))
 ;;;;
@@ -59,6 +59,14 @@
       (ad-gray-light    "#a3a3a3")  ; gray64
       (ad-gray-lightest "#e0e0e0")  ; gray88
       (ad-red           "#ff0000")) ; red
+  (defface powerline-active-erc2
+           `((t (:inherit powerline-active2 :foreground ,ad-highlight)))
+           "Powerline face 2 for ERC notifications."
+           :group 'powerline)
+  (defface powerline-inactive-erc2
+           `((t (:inherit powerline-inactive2 :foreground ,ad-highlight)))
+           "Powerline face 2 for ERC notifications."
+           :group 'powerline)
   (custom-theme-set-faces 'aerique-dark
     ;; baseline, everything either inherits from these or uses the above colors
     `(default ((t :foreground ,ad-gray-lightest :background ,ad-darkest)))
