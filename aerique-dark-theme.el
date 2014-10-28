@@ -234,6 +234,7 @@
     `(slime-repl-inputed-output-face ((t :foreground ,ad-gray-light)))
     `(slime-repl-output-face ((t :inherit font-lock-comment-face)))
     `(slime-repl-prompt-face ((t :inherit bold)))
+    `(sp-pair-overlay-face ((t)))
     `(vertical-border ((t :foreground ,ad-darkest)))
     `(trailing-whitespace ((t :background ,ad-comment)))
     `(warning ((t :foreground ,ad-highlight)))
