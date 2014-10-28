@@ -45,20 +45,21 @@
   The point of this theme is not highlighting all kinds of different syntax
   but partitioning the source code in easily scannable pieces.")
 
-(let ((ad-comment       "#cd5c5c")  ; indian red
-      (ad-highlight     "#ffff00")  ; yellow
-      (ad-keyword       "#8fbc8f")  ; dark sea green
-      (ad-link          "#00cccc")  ; cyan
-      ;(ad-string        "#cc8c5c")  ; brown
-      ;; ^^^ I still like my own brown better :-(
-      (ad-string        "#cc8162")  ; LightSalmon3
-      (ad-darkest       "#000000")  ; black
-      (ad-lightest      "#ffffff")  ; white
-      (ad-gray-darkest  "#292929")  ; gray16
-      (ad-gray-dark     "#525252")  ; gray32
-      (ad-gray-light    "#a3a3a3")  ; gray64
-      (ad-gray-lightest "#e0e0e0")  ; gray88
-      (ad-red           "#ff0000")) ; red
+(let* ((ad-comment       "#cd5c5c")  ; indian red
+       (ad-highlight     "#ffff00")  ; yellow
+       (ad-keyword       "#8fbc8f")  ; dark sea green
+       (ad-link          "#00cccc")  ; cyan
+       (ad-string        "#cc8162")  ; LightSalmon3
+       (ad-darkest       "#000000")  ; black
+       (ad-lightest      "#ffffff")  ; white
+       (ad-gray-darkest  "#292929")  ; gray16
+       (ad-gray-dark     "#525252")  ; gray32
+       (ad-gray-light    "#a3a3a3")  ; gray64
+       (ad-gray-lightest "#e0e0e0")  ; gray88
+       (ad-red           "#ff0000")  ; red
+       (default `((t :foreground ,ad-gray-lightest :background ,ad-darkest)))
+       (bold    `((t :bold t)))
+       (error   `((t :foreground ,ad-red))))
   (defface powerline-active-erc2
            `((t (:inherit powerline-active2 :foreground ,ad-highlight)))
            "Powerline face 2 for ERC notifications."
@@ -67,13 +68,13 @@
            `((t (:inherit powerline-inactive2 :foreground ,ad-highlight)))
            "Powerline face 2 for ERC notifications."
            :group 'powerline)
+  ;; Baseline, everything either inherits from these or uses the above colors.
   (custom-theme-set-faces 'aerique-dark
-    ;; baseline, everything either inherits from these or uses the above colors
-    `(default ((t :foreground ,ad-gray-lightest :background ,ad-darkest)))
-    `(bold ((t :bold t)))
+    `(default ,default)
+    `(bold ,bold)
     `(dired-directory ((t :foreground ,ad-link)))
     `(dired-symlink ((t :foreground ,ad-highlight)))
-    `(error ((t :foreground ,ad-red)))
+    `(error ,error)
     `(link ((t :foreground ,ad-link :underline t)))
     `(mode-line ((t :foreground ,ad-darkest :background ,ad-gray-light
                     :box nil)))
@@ -81,19 +82,23 @@
     `(font-lock-builtin-face ((t :foreground ,ad-keyword)))
     `(font-lock-comment-delimiter-face ((t :foreground ,ad-comment)))
     `(font-lock-comment-face ((t :foreground ,ad-comment)))
-    `(font-lock-constant-face ((t :inherit default)))
+    `(font-lock-constant-face ,default)
     `(font-lock-doc-face ((t :foreground ,ad-comment)))
-    `(font-lock-function-name-face ((t :inherit default)))
-    `(font-lock-keyword-face ((t :inherit default)))
-    `(font-lock-negation-char-face ((t :inherit default)))
-    `(font-lock-preprocessor-face ((t :inherit default)))
-    `(font-lock-regexp-grouping-backslash ((t :inherit default)))
-    `(font-lock-regexp-grouping-construct ((t :inherit default)))
+    `(font-lock-function-name-face ,default)
+    `(font-lock-keyword-face ,default)
+    `(font-lock-negation-char-face ,default)
+    `(font-lock-preprocessor-face ,default)
+    `(font-lock-regexp-grouping-backslash ,default)
+    `(font-lock-regexp-grouping-construct ,default)
     `(font-lock-string-face ((t :foreground ,ad-string)))
-    `(font-lock-type-face ((t :inherit default)))
-    `(font-lock-variable-name-face ((t :inherit default)))
-    `(font-lock-warning-face ((t :inherit error)))
-    ;; the rest...
+    `(font-lock-type-face ,default)
+    ;; Sigh.. this adds some needed partitioning for C++ but it's too much for
+    ;; other languages.
+    ;`(font-lock-type-face ((t :foreground "#8f8fbc")))
+    `(font-lock-variable-name-face ,default)
+    `(font-lock-warning-face ,error))
+  (custom-theme-set-faces 'aerique-dark
+    ;; The rest...
     `(button ((t :inherit link)))
     ;; I haven't figured out the company-* faces marked with magenta yet.
     `(company-echo ((t :foreground "green" :background "magenta")))
