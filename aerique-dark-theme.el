@@ -34,6 +34,26 @@
 ;;;;       (add-to-list 'custom-theme-load-path "«theme-directory»")
 ;;;;       (load "«theme-directory»/aerique-dark-theme")
 ;;;;       (load-theme 'aerique-dark t))
+;;;;
+;;;; With regards to minimizing syntax highlighting there's ofcourse
+;;;; font-lock-maximum-decoration but who uses that?  Switching themes is
+;;;; easier.
+;;;;
+;;;; Legend:
+;;;;
+;;;; green:              red:                    harsh red:
+;;;; - executable files  - compressed files      - errors
+;;;; - diff adds         - diff removals         - warnings
+;;;; - Lisp keywords     - source code comments
+;;;; - Python builtins   - org todo
+;;;; - online indicator
+;;;; - irc own text
+;;;; - org done
+;;;;
+;;;; cyan:               yellow:                 brown:
+;;;; - directories       - changed buffers       - strings
+;;;; - hyperlinks        - highlights            - offline indicator
+;;;; - irc mentions      - symbolic links
 
 ;;;; Code:
 
