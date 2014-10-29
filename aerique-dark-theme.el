@@ -178,6 +178,8 @@
     `(jabber-rare-time-face ((t :inherit font-lock-builtin-face :underline t)))
     `(jabber-roster-user-online ((t :inherit font-lock-builtin-face)))
     `(jabber-roster-user-away ((t :inherit font-lock-string-face)))
+    `(jabber-title-large ((t :inherit variable-pitch :bold t :height 1.8)))
+    `(jabber-title-medium ((t :inherit variable-pitch :bold t :height 1.4)))
     `(js2-function-param ((t :inherit default)))
     `(js2-jsdoc-tag ((t :inherit font-lock-comment-face)))
     `(js2-jsdoc-type ((t :inherit font-lock-comment-face)))
