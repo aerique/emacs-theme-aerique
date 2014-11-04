@@ -1,0 +1,18 @@
+# .gitconfig
+#
+# Last change: 2014-11-04 16:23
+#
+# Set GIT_* vars in ~/.zshrc.
+
+[color]
+	branch      = auto
+	diff        = auto
+	grep        = auto
+	#interactive = auto
+	status      = auto
+	ui          = auto
+[color "interactive"]
+	error  = yellow bold
+	header = white bold
+	help   = white bold
+	prompt = white bold

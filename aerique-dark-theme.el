@@ -46,7 +46,7 @@
 ;;;; - diff adds         - diff removals         - warnings
 ;;;; - Lisp keywords     - source code comments
 ;;;; - Python builtins   - org todo
-;;;; - online indicator  - ext. away indicator
+;;;; - online indicator  - extended away indicator
 ;;;; - irc own text
 ;;;; - org done
 ;;;;

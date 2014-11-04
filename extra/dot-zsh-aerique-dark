@@ -1,0 +1,41 @@
+# .zsh-aerique-dark
+#
+# Last change: 2014-11-04 16:14
+
+# Variables
+
+OS=`uname -s`
+
+
+# Exports
+
+export GREP_COLORS="ms=00;33:mc=00;33:sl=:cx=:fn=32:ln=32:bn=32:se=37"
+
+if [ "${OS}" = "Darwin" ]; then
+    export LSCOLORS="gxdxcxdxcxegedabagacad"
+fi
+
+
+# Aliases
+
+alias ag='ag --color --group --color-line-number "0;33" --color-path "0;32"'
+alias agncm='ag --color --group --color-line-number "0;33" --color-match "" --color-path "0;32"'
+alias grep='grep --color=always'
+alias egrep='egrep --color=always'
+alias fgrep='fgrep --color=always'
+
+if [ "${OS}" = "Darwin" ]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color=auto --group-directories-first'
+fi
+
+
+# Syntax highlighting
+
+# git://github.com/zsh-users/zsh-syntax-highlighting.git
+source $HOME/zsh/zsh-syntax-highlighting-git/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=yellow'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=yellow'
+# To have paths colored instead of underlined
+ZSH_HIGHLIGHT_STYLES[path]='fg=green'
