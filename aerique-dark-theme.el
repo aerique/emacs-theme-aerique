@@ -186,7 +186,8 @@
     `(helm-ff-file ,default)
     `(helm-ff-symlink ,symlink)
     `(highlight ((t :background ,ad-highlight :foreground ,ad-darkest)))
-    `(hl-line ((t :background ,ad-gray-dark)))
+    ;`(hl-line ((t :background ,ad-gray-darkest)))  ;; not dark enough
+    `(hl-line ((t :background "#141414")))
     `(isearch ((t :background ,ad-lightest :foreground ,ad-darkest)))
     `(jabber-activity-face ((t :foreground ,ad-string)))
     `(jabber-activity-personal-face ((t :foreground ,ad-highlight)))
