@@ -31,50 +31,50 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-syntax on
-"let g:colors_name="aerique-dark"
-let colors_name="aerique-dark"
+let g:colors_name="aerique-dark"
 
 " Default
-highlight Normal       ctermfg=254             gui=none guifg=#e0e0e0 guibg=#000000
+highlight Normal       ctermfg=254                gui=none guifg=#e0e0e0 guibg=#000000
 
 " General
 "highlight ColorColumn
 "highlight Cursor
 "highlight CursorLine
 "highlight CursorColumn
-highlight DiffAdd      ctermfg=108             gui=none guifg=#8fbc8f
-highlight DiffDelete   ctermfg=167             gui=none guifg=#cd5c5c
-highlight DiffChange   ctermfg=44              gui=none guifg=#00cccc
-highlight DiffText     ctermfg=173             gui=none guifg=#cc8162
-highlight Folded       ctermfg=16              gui=none guifg=#000000
-highlight FoldColumn   ctermfg=16              gui=none guifg=#000000
+highlight DiffAdd      ctermfg=108 ctermbg=none   gui=none guifg=#8fbc8f
+highlight DiffDelete   ctermfg=167 ctermbg=none   gui=none guifg=#cd5c5c
+highlight DiffChange   ctermfg=44  ctermbg=none   gui=none guifg=#00cccc
+highlight DiffText     ctermfg=173 ctermbg=none   gui=none guifg=#cc8162
+
+highlight Folded       ctermfg=254 ctermbg=239    gui=none guifg=#000000
+highlight FoldColumn   ctermfg=254 ctermbg=239    gui=none guifg=#000000
 "highlight MatchParen
 "highlight LineNr
-highlight NonText      ctermfg=239             gui=none guifg=#525252
+highlight DiffAdd      ctermfg=108 ctermbg=none   gui=none guifg=#8fbc8f
+highlight NonText      ctermfg=239                gui=none guifg=#525252
 "highlight Pmenu
 "highlight PmenuSel
-highlight Search       ctermfg=173 ctermbg=239 gui=none guifg=#cc8162 guibg=#525252
-highlight SpecialKey   ctermfg=239             gui=none guifg=#525252
-"highlight StatusLine
-"highlight StatusLineNC
+highlight Search       ctermfg=173 ctermbg=239    gui=none guifg=#cc8162 guibg=#525252
+highlight SpecialKey   ctermfg=239                gui=none guifg=#525252
+highlight StatusLine   ctermfg=254                gui=none guifg=#e0e0e0 guibg=#000000
+highlight StatusLineNC ctermfg=239 ctermbg=none   gui=none guifg=#525252
 "highlight Title
-"highlight VertSplit
-highlight Visual       ctermfg=16 ctermbg=254  gui=none guifg=#000000 guibg=#e0e0e0
+highlight VertSplit    ctermfg=239 ctermbg=none   gui=none guifg=#525252
+highlight Visual       ctermfg=16  ctermbg=254    gui=none guifg=#000000 guibg=#e0e0e0
 
 " Syntax
-highlight Comment      ctermfg=167             gui=none guifg=#cd5c5c
-highlight Constant     ctermfg=254             gui=none guifg=#e0e0e0
-highlight Delimiter    ctermfg=254             gui=none guifg=#e0e0e0
-highlight Identifier   ctermfg=254             gui=none guifg=#e0e0e0
+highlight Comment      ctermfg=167                gui=none guifg=#cd5c5c
+highlight Constant     ctermfg=254                gui=none guifg=#e0e0e0
+highlight Delimiter    ctermfg=254                gui=none guifg=#e0e0e0
+highlight Identifier   ctermfg=254                gui=none guifg=#e0e0e0
 "highlight Function
 "highlight Number
 "highlight Operator
-highlight PreProc      ctermfg=254             gui=none guifg=#e0e0e0
-highlight Special      ctermfg=173             gui=none guifg=#cc8162
-highlight Statement    ctermfg=254             gui=none guifg=#e0e0e0
-highlight Type         ctermfg=254             gui=none guifg=#e0e0e0
-highlight String       ctermfg=173             gui=none guifg=#cc8162
+highlight PreProc      ctermfg=254                gui=none guifg=#e0e0e0
+highlight Special      ctermfg=173                gui=none guifg=#cc8162
+highlight Statement    ctermfg=254                gui=none guifg=#e0e0e0
+highlight Type         ctermfg=254                gui=none guifg=#e0e0e0
+highlight String       ctermfg=173                gui=none guifg=#cc8162
 
 " Language Specific
 "highlight link cSpecial
