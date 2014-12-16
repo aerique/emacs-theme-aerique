@@ -114,7 +114,8 @@
                                  :background ,ad-lightest)))
     `(company-tooltip-common-selection ((t :foreground ,ad-darkest
                                            :background ,ad-highlight)))
-    `(company-tooltip-mouse ((t :foreground "green" :background "magenta")))
+    `(company-tooltip-mouse ((t :foreground ,ad-darkest
+                                :background ,ad-highlight)))
     `(company-tooltip-selection ((t :foreground ,ad-darkest
                                     :background ,ad-keyword)))
     `(compilation-info ,font-lock-builtin-face)
