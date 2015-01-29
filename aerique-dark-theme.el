@@ -54,6 +54,8 @@
 ;;;; - directories       - changed buffers       - strings
 ;;;; - hyperlinks        - highlights            - away indicator
 ;;;; - irc mentions      - symbolic links
+;;;;
+;;;; Note to self: SkyBlue is also a nice color.
 
 ;;;; Code:
 
@@ -256,12 +258,14 @@
     `(org-link ,link)
     `(org-table ,font-lock-builtin-face)
     `(org-todo ((t :foreground ,ad-comment :bold t)))
+    `(org-verbatim ,font-lock-string-face)
     `(powerline-evil-emacs-face ((t :background ,ad-red)))
     `(powerline-evil-insert-face ((t :background ,ad-keyword)))
     `(powerline-evil-motion-face ((t :background ,ad-link)))
     `(powerline-evil-normal-face ((t :background ,ad-comment)))
     `(powerline-evil-operator-face ((t :background ,ad-link)))
     `(powerline-evil-visual-face ((t :background ,ad-string)))
+    `(pulse-highlight-start-face ((t :background ,ad-highlight)))
     `(region ((t :background ,ad-gray-dark)))
     `(sh-quoted-exec ,default)
     `(shadow ((t :foreground ,ad-gray-light)))
