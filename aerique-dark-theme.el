@@ -95,6 +95,14 @@
            `((t (:inherit powerline-inactive2 :foreground ,ad-highlight)))
            "Powerline face 2 for ERC notifications."
            :group 'powerline)
+  (defface powerline-active-modified-read-only
+           `((t (:foreground ,ad-comment)))
+           "Powerline face for modified read-only buffers."
+           :group 'powerline)
+  (defface powerline-inactive-modified-read-only
+           `((t (:foreground ,ad-comment)))
+           "Powerline face for modified read-only buffers."
+           :group 'powerline)
   (custom-theme-set-faces 'aerique-dark
     `(bold ,bold)
     `(button ,link)
