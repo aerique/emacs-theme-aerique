@@ -108,6 +108,15 @@
   (custom-theme-set-faces 'aerique-dark
     `(bold ,bold)
     `(button ,link)
+    `(cfw:face-header ,default)
+    `(cfw:face-holiday ,font-lock-builtin-face)
+    `(cfw:face-select ((t :foreground ,ad-darkest :background ,ad-highlight)))
+    `(cfw:face-saturday, default)
+    `(cfw:face-sunday ,default)
+    `(cfw:face-toolbar ,default)
+    `(cfw:face-toolbar-button-on ((t :foreground ,ad-gray-lightest :bold t)))
+    `(cfw:face-toolbar-button-off ((t :foreground ,ad-gray-light :bold t)))
+    `(cfw:face-title ((t :inherit variable-pitch :bold t :height 1.8)))
     ;; I haven't figured out the company-* faces marked with magenta yet.
     `(company-echo ((t :foreground "green" :background "magenta")))
     `(company-echo-common ((t :foreground "green" :background "magenta")))
