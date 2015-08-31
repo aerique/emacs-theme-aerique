@@ -85,7 +85,7 @@ highlight link gitcommitSelectedFile  Comment
 highlight link gitcommitSelectedType  Comment
 highlight link gitcommitUntrackedFile Comment
 highlight link gitconfigVariable      Normal
-highlight link javaScriptBraces       Special
+highlight link javaScriptBraces       Normal
 " why do links not work for these two?
 highlight      javaScriptIdentifier   ctermfg=254 gui=none guifg=#e0e0e0
 highlight      javaScriptFunction     ctermfg=254 gui=none guifg=#e0e0e0
