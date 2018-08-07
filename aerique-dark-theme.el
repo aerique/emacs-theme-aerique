@@ -55,7 +55,7 @@
 ;;;; - hyperlinks        - highlights            - away indicator
 ;;;; - irc mentions      - symbolic links
 ;;;;
-;;;; Note to self: SkyBlue is also a nice color.
+;;;; Note to self: orchid2, PaleVioletRed2, SkyBlue are nice colors.
 
 ;;;; Code:
 
@@ -71,7 +71,7 @@
        (ad-highlight     "#ffff00")  ; yellow
        (ad-keyword       "#8fbc8f")  ; dark sea green
        (ad-link          "#00cccc")  ; cyan
-       (ad-string        "#cc8162")  ; LightSalmon3
+       (ad-string        "#e9967a")  ; dark salmon
        (ad-darkest       "#000000")  ; black
        (ad-lightest      "#ffffff")  ; white
        (ad-gray-darkest  "#292929")  ; gray16
