@@ -88,7 +88,11 @@
        (font-lock-builtin-face `((t :foreground ,ad-keyword)))
        (font-lock-comment-face `((t :foreground ,ad-comment)))
        (font-lock-string-face  `((t :foreground ,ad-string)))
-       (link                   `((t :foreground ,ad-link :underline t))))
+       (highlight              `((t :foreground ,ad-darkest
+                                    :background ,ad-highlight)))
+       (keyword                `((t :foreground ,ad-keyword)))
+       (link                   `((t :foreground ,ad-link :underline t)))
+       (subdued                `((t :foreground ,ad-gray-light))))
   (defface powerline-active-erc2
            `((t (:inherit powerline-active2 :foreground ,ad-highlight)))
            "Powerline face 2 for ERC notifications."
