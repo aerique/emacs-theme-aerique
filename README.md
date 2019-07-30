@@ -1,3 +1,7 @@
+The canonical home page for this project is: https://git.sr.ht/~aerique/emacs-theme-aerique
+
+(The library is also pushed to GitLab and GitHub but those sites are not monitored for support.)
+
 # Emacs Theme: aerique
 
 Theme centered on minimal syntax highlighting and distinct but not too
